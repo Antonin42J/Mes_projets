@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Set the character encoding and viewport for responsiveness -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link to an external stylesheet for styling -->
+        <link rel="stylesheet" type="text/css" href="site.css">
+    </head>
+
+    <body>
+        <!-- Header section with the main title -->
+        <header>
+            <h1 class="title">
+                Air quality around the world 
+            </h1>
+        </header>
+
+        <!-- Main content section for downloading data -->
+        <div class="download">
+
+            <!-- Subsection for download-related information -->
+            <h2 class="title_filter">
+                Download the data
+            </h2>
+
+            <p class="filter_instrution">
+                Select the filter
+            </p>
+
+            <!-- Form section with various filters -->
+            <div class="filter">
+
+                <!-- Filter for sensor ID -->
+                <div class="inputtext">
+                    ID sensors : 
+                    <input class="input" type="number" id="ids">
+                </div>
+
+                <!-- Filters for latitude, longitude, and altitude -->
+                <div class="numberfilter">
+
+                    <div class="inputtext">
+                        Latitude : 
+                        <input class="input" type="number" id="lat" step="0.001">
+                    </div>
+
+                    <div class="inputtext">
+                        Longitude : 
+                        <input class="input" type="number" id="long" step="0.001">
+                    </div>
+
+                    <div class="inputtext">
+                        Altitude : 
+                        <input class="input" type="number" id="alt" step="0.001">
+                    </div>
+
+                </div>
+
+                <!-- Filters for country code and name -->
+                <div class="country">
+
+                    <div class="inputtext">
+                        Country_code : 
+                        <input class="input" type="text" id="country_code">
+                    </div>
+
+                    <div class="inputtext">
+                        Country_name : 
+                        <input class="input" type="text" id="country_name">
+                    </div>
+
+                </div>
+
+                <!-- Filters for start and end time -->
+                <div class="time">
+
+                    <div class="inputtext">
+                        Start time : 
+                        <input class="input" type="datetime-local" id="starttime">
+                    </div>
+
+                    <div class="inputtext">
+                        End time : 
+                        <input class="input" type="datetime-local" id="endtime">
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- Buttons for confirming filters and initiating downloads -->
+            <div class="button">
+                <button class="buttonc" id="c">
+                    Confirm your filters and download
+                </button>
+
+                <button class="buttond" id="d">
+                    Download global data
+                </button>
+
+                <button class="buttonsl" id="sl">
+                    Download sensors list
+                </button>
+            </div>
+
+            <!-- Section for displaying messages -->
+            <div class="message">
+                <h3> Message </h3>
+                <p class="textm" id="textcontrol">
+                    <!-- Message content will be dynamically populated -->
+                </p>
+            </div>
+
+        </div>
+
+    </body>
+
+    <!-- Link to an external JavaScript file for scripting -->
+    <script src="site.js"></script>
+
+</html>

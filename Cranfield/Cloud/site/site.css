@@ -1,0 +1,62 @@
+
+.title{
+    color: blue;
+
+    text-align: center;
+}
+
+.title_filter{
+
+    text-decoration: underline;
+    margin-top: 50px;
+    margin-left: 15px;
+
+}
+
+.filter_instrution{
+    text-align: center;
+
+    height: 25px;
+}
+
+.filter, .message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.numberfilter, .time, .country{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputtext{
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttonc, .buttond, .buttonsl {
+    margin: 0px 10px;
+}
+
+.message{
+    margin-top: 20px;
+}
+
+.textm{
+    margin-top: 5px;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
