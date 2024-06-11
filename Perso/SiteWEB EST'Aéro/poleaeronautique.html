@@ -1,0 +1,368 @@
+<!-- 
+Ce code est consacré à la page index (ou page d'accueil) du site
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="ESTi'Aéro est une association étudiante de l'ESTIA, proposant 
+        des projets et évènements dans le domaine de l'aéronautique, de l'aérospatiale, de l'aéromodélisme et de l'astronomie">
+
+        <meta name="keywords" content="Aéronautique, Avion, ESTIA, ESTI'Aéro, Spatiale, Aéromodélisme, Aérospatiale, Astronomie, BIA">
+
+        <!-- définition du nom de la page -->
+        <title>ESTI'Aéro - Pôle Aéronautique</title>
+        <link rel="shortcut icon" href="images/logo/logoasso.png">
+
+        <!-- lien vers le code css -->
+        <link href="css/sitestyle.css" rel="stylesheet" type="text/css">
+
+        <!-- Lien pour utiliser des iônes FontAwesome-->
+        <script src="https://kit.fontawesome.com/449d8f2d0f.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <!-- implémantation de l'en tête-->
+        <header class="entete"> 
+
+            <div class="logotitreestiaerocontact">
+                <div class="logotitreestiaero">
+                    <a href="index.html"><img src="images/logo/Logo.png" class="logoestiaero" alt="..."></a>
+                    <a href="index.html" class="titreestiaerobis"><p class="titreestiaero">ESTI'Aero</p> </a>
+                </div>
+
+                <div class="contact"> <!-- lien vers les réseaux sociaux ou mail -->
+                    <div class="mail">
+                        
+                        <p class="textcontact"> Contactez-nous !! </p>
+
+                    </div>
+                    
+                    <div class="reseausociaux">
+                        <a href="https://www.instagram.com/esti_aero/" target="_blank"><i class="fa-brands fa-instagram fa-2xl iconereseau"></i></a>
+                        <a href="https://www.facebook.com/estiaero/" target="_blank"><i class="fa-brands fa-facebook fa-2xl iconereseau"></i></a>
+                        <a href="https://www.linkedin.com/company/estiaero/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl iconereseau"></i></a>
+                        <a href="mailto:estiaero@net.estia.fr"><i class="fa-solid fa-envelope fa-2xl iconereseau"></i></a>
+                    </div>
+                    
+                    <div class="adhesion">
+                        <a class="btnadhesion" href="https://www.helloasso.com/associations/esti-aero/adhesions/adhesion-esti-aero-2023-2024?_ga=2.113614471.1292198743.1695228588-252891107.1695228588&_gl=1%2a8wn3qb%2a_ga%2aMjUyODkxMTA3LjE2OTUyMjg1ODg.%2a_ga_TKC826G3G2%2aMTY5NTIyOTk0MS4xLjEuMTY5NTIyOTk2MC41NC4wLjA." target="_blank"> Rejoignez-nous !!</a>
+                    </div>
+
+                    <div class ="locali">
+                        <a href="localisation.html"><i class="fa-solid fa-location-dot fa-xl iconereseau"></i></a>
+                        <a href="localisation.html" class="localitexte">Où nous trouver </a>
+                    </div>
+
+                </div>
+            
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <a class="btnmenu" href="index.html">
+                    <p class="bamenu">Accueil</p> 
+                </a>
+                
+
+                <a class="btnmenu" href="historique.html">
+                    <p class="bamenu">Historique</p> 
+                </a>
+
+                <li class="btnmenu">
+                    <a class="bamenu">Pôles &emsp;<i class="fa-solid fa-chevron-down"></i></a> 
+                    <ul class="sousmenupoles">
+                        <a class="sousbtn sousbtnlast" href="poleaeronautique.html">
+                            <p class="bapoles" href="poleaeronautique.html">
+                                <i class="fa-solid fa-plane fa-xl iconenav"></i>
+                                &ensp; Aéronautique
+                            </p>
+                        </a>
+                        <a class="sousbtn sousbtnlast" href="poleaerospatial.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-rocket fa-xl iconenav"></i>
+                                &ensp; Aérospatial
+                            </p>
+                        </a>
+
+                        <a class="sousbtn sousbtnlast" href="poleaeromodelisme.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-tower-broadcast fa-xl iconenav"></i>
+                                &ensp; Aéromodélisme
+                            </p>
+                        </a>
+
+                        <a class="sousbtn sousbtnlast" href="poleastronomie.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-meteor fa-xl iconenav"></i>
+                                &ensp; Astronomie
+                            </p>
+                        </a>
+
+                    </ul>
+                </li>
+
+                <a class="btnmenu" href="partenaires.html">
+                    <p class="bamenu">Partenaires</p> 
+                </a>
+
+                <a class="btnmenu" href="boutique.html">
+                    <p class="bamenu">Boutique</p> 
+                </a>
+
+                <a class="btnmenu" href="simulateur.html">
+                    <p class="bamenu">Simulateur</p> 
+                </a>
+
+            </ul>
+        </nav>
+
+        <!-- Barre de navigation pour téléphone-->   
+        <label id="lab" for="ch">
+            <div class="boutonphone1">
+                <i class="fa-solid fa-bars fa-xl btnmenuphone1"></i>
+            </div>
+        </label>
+        <input type="checkbox" id="ch" />   
+        <nav class="navbarphone">
+
+            <ul class="menuphone">
+                <li class="btnmenup">
+                    <a class="bamenup" href="index.html">Accueil</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="historique.html">Historique</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="#">Pôles</a> 
+                </li>
+                
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaeronautique.html">
+                            <i class="fa-solid fa-plane fa-xl iconenav"></i>
+                            &ensp; Aéronautique
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaerospatial.html">
+                            <i class="fa-solid fa-rocket fa-xl iconenav"></i>
+                            &ensp; Aérospatial
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp" >
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaeromodelisme.html">
+                            <i class="fa-solid fa-tower-broadcast fa-xl iconenav"></i>
+                            &ensp; Aéromodélisme
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleastronomie.html">
+                            <i class="fa-solid fa-meteor fa-xl iconenav"></i>
+                            &ensp; Astronomie</a>
+                    </div>
+                </li>
+
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="partenaires.html">Partenaires</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="boutique.html">Boutique</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="simulateur.html">Simulateur</a> 
+                </li>
+
+            </ul>
+        </nav>
+
+        <!--Corps de la page -->
+
+
+        <div class="coprspageaero">
+
+            <div class="entetepoleaero">
+                <div class="presentationpoleaero">
+                    <img src="images/logo/logo-aeronautique.png" class="logopole" alt="...">
+                    <div class="tpresaero">
+                        <h1 class="titrepoleaero"> Pôle Aéronautique </h1>
+                        <p class="textpresentationpoleaero"> 
+                            Le pôle aéronautique de l'association regroupe différents événements et activités qui permettent
+                            de mieux découvrir et appréhender ce domaine. Nous pouvons notamment évoquer le passage du Brevet
+                            d'Initiation Aéronautique (BIA) ou encore différentes visites.   
+                        </p>
+                    </div>        
+                </div>
+            </div>
+
+            <div class="bia">
+
+                <p class="titrebia">Brevet d'Initiation Aéronautique (BIA)</p>
+                <img src="images/activite/bia.png" class="logobia" alt="...">
+                <div class="presentationbia">
+                    <article class="textebia">
+                        Le Brevet d'Initiation Aéronautique (BIA) est un diplôme délivré par l'éducation nationale, de niveau lycée, 
+                        qui permet aux jeunes étudiants d'obtenir des bases en aéronautique et spatial. 
+                        Ce diplôme offre des connaissances non négligeables pour passer des brevets de pilote. 
+                        Le BIA ouvre, pour les futurs ingénieurs de l'ESTIA, les portes du monde des entreprises aéronautiques et spatiales. 
+                        <br>
+                        <br>
+                        ESTI'Aéro offre la possibilité aux élèves de l'ESTIA de passer ce diplôme auprès de l’académie de Bordeaux avec des cours dispensés par un professeur de l'Aéroclub Turboméca. 
+                        L'association en partenariat avec l'ESTIA fournit aux élèves et au professeur les lieux et le matériel afin d'apprendre dans les meilleures conditions. 
+                        Le cursus classique de 50h n’est pas applicable pour notre association. 
+                        Néanmoins, le professeur dispense un condensé des partis les plus complexes en 24h. 
+                        <br>
+                        <br>
+                        Ce brevet comporte une formation théorique sur la mécanique du vol, la connaissance des aéronefs, 
+                        la réglementation aérienne, la météorologie ainsi que l’Histoire de l’Aéronautique et de l’Espace. 
+                        Une option facultative « Anglais aéronautique » est aussi proposée aux élèves.
+                        <br>
+                        <br>
+                        En parallèle de l’obtention de leur BIA, les membres de l’association peuvent confronter leurs apprentissages théoriques à la pratique du vol sur le simulateur de l’association. 
+                        Cela donne beaucoup plus de sens à ce qu’ils apprennent et peut leur donner envie de continuer sur une licence de pilote. 
+                        Dans ce cas, ESTI’Aéro propose de passer son brevet de pilote planeur avec ses partenaires de l’aéroclub Itxassou ou encore son brevet de pilote privé sur avion léger (PPL) avec l’aéroclub Turboméca. 
+                        <br>
+                        <br>
+                        <br>
+                        Pour la session 2022/2023, les cours se dérouleront entre janvier et février pour un examen en mai. Les inscriptions sont 
+                        disponible jusqu'au 20 novembre 2022.  
+                    </article>
+
+                    
+                </div>
+                <a class="btninscriptionbia" href="https://www.helloasso.com/associations/esti-aero/evenements/brevet-d-initiation-a-l-aeronautique"> Je m'inscris </a>
+            </div>
+
+            <div class="visite">
+                <h1 class="titrevisite"> Visites de sites aéronautiques</h1>
+                <div class="presentationvisite">
+                    <article class="textevisite">
+                        Il est très enrichissant pour les élèves de visiter des structures en lien avec l’aéronautique. 
+                        Cela peut aller du constructeur amateur qui montrera les « entrailles » de son aéronef en construction,
+                        à l’usine du secteur qui conçoit et assemble des aéronefs en série. 
+                        Nous avons par exemple visité la base aérienne 118 de Mont-de-Marsan le 28 octobre 2021 ou encore 
+                        le site de Dassault Aviation à Biarritz le 17 novembre 2022 et nous sommes en relation 
+                        avec diverses autres entreprises dans le secteur de l’aéronautique pour organiser de futures visites comme le site de Dassault Aviation de Mérignac, 
+                        la base aérienne 120 de Cazaux ainsi que la DGA TA à Balma.
+                    </article>
+                </div>
+                <div class="imagevisite">
+                    <div class="imagebase">
+                        <img src="images/activite/BA118.jpg" class="imgbase" alt="...">
+                        <p class="titreimgbase"> Visite de la base aérienne 118</p>
+                    </div>
+                    <div class="imagedassault">
+                        <img src="images/activite/_DSC0182.jpg" class="imgdassault" alt="...">
+                        <p class="titreimgdassault"> Visite du site Dassault Aviation Biarritz</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aeroturbomeca">
+                <h1 class="titreaeroturbomeca"> Partenariat aéroclub Turboméca </h1>
+                <div class="presentationaeroturbomeca">
+                    <article class="texteaeroturbomeca">
+                        Cet aéroclub situé sur l’aéroport de Biarritz regroupe des passionnés d’aéronautique de l’entreprise Turboméca. 
+                        Ils s’y retrouvent souvent pour voler, faire des navigations et partager des moments conviviaux lors des beaux jours. 
+                        Le lien entre l’association et l’aéroclub avait déjà été tissé il y a quelques années et a été remis d’actualité l’année dernière en signant une convention. 
+                        Celle-ci permet aux étudiants d’apprendre à piloter sur les appareils de l’aéroclub ainsi que de pouvoir visiter les différents sites de Safran Helicopter Engines 
+                        et partager des moments de convivialité avec les adhérents de l’aéroclub autour des avions. Un des pilotes de l'aéroclub donne 
+                        les cours du BIA et permet aux élèves de voler lors d'un vol d'initiation.
+                    </article>
+                </div>
+                <div class="imagevisite">
+                    <div class="imagebase">
+                        <img src="images/activite/avionturbo.jpg" class="imgbase" alt="...">
+                        <p class="titreimgbase"> Avion du club</p>
+                    </div>
+                    <div class="imagedassault">
+                        <img src="images/activite/volBIA.jpg" class="imgdassault" alt="...">
+                        <p class="titreimgdassault"> Vol d'iniation du BIA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itxassoutelerad">
+                <h1 class="titreitxassoutelerad"> Partenariat avec le club de vole à voile d'Itxassou et Telerad</h1>
+                <div class="presentationitxassoutelerad">
+                    <article class="texteitxassoutelerad">
+                        Basé sur l’aérodrome d’Itxassou (64), le club de Vol à Voile forme des pilotes de planeur et propose aussi des vols d’initiation, 
+                        des vols découverte l’été, mais aussi un stage de deux semaines où tous les passionnés acquièrent des compétences en vol en très peu de temps grâce à l’enseignement intensif et l’immersion dans le club.
+                        <br>
+                        <br>
+                        Telerad est une entreprise située à Anglet (64), qui propose la fabrication, 
+                        la mise en service et la commercialisation de systèmes de radio pour la marine et le contrôle du trafic aérien. 
+                        <br>
+                        <br>
+                        Depuis la rentrée de septembre 2022, un partenariat entre le club, 
+                        l’entreprise Telerad et ESTI’Aéro a été mis en place. Ce partenariat consiste à initier nos membres au planeur et à le rendre plus accessible en proposant de faire passer 
+                        le brevet de planeur au Club d’Itxassou en profitant d’une bourse proposée par Telerad pour financer une partie des heures de vol. Il permet également d’avoir un retour d’expérience de pilotes expérimentés et donc de nous aider sur différents projets.
+                        <br>
+                        <br>
+                        Ce partenariat est aussi l’occasion d’échanger entre les membres de l’association et les pilotes du club, 
+                        notamment sur l’installation et/ou la réparation du système de sécurité FLARM pour chaque planeur. 
+                        La prochaine étape est d’exploiter les données récupérées sur les FLARM afin d’améliorer les performances de vol des pilotes.
+                    </article>
+                </div>
+                <div class="imageplaneur">
+                    <img src="images/activite/elevebourse.jpg" class="imgplaneur" alt="...">
+                    <p class="titreimgbase"> Elève boursier lors d'un vol d'entraînement</p>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <!-- Bas de page-->
+
+        <footer class="basdepage">
+
+            <!-- Adresse -->
+            <div class="textebasdepage">
+                <img src="images/logo/logoasso.png" class="logoestiaerorond" alt="...">
+                <div class="adressesup"><a href="localisation.html" class="adresse"> 92 All. Théodore Monod <br> 64210 Bidart</a></div>
+                <img src="images/logo/estiarond.png" class="logoestiarond" alt="...">
+            </div>
+
+            <div class="mailbasdepage">
+                <a href="mailto:estiaero@net.estia.fr" class="textmailbdp"><i class="fa-solid fa-envelope fa-2xl iconemailbdp"></i>: estiaero@net.estia.fr</a>
+            </div>
+
+            <div class="reseausociauxbasdepage">
+
+                <a href="https://www.instagram.com/esti_aero/" target="_blank"><i class="fa-brands fa-instagram fa-2xl iconereseaubdp"></i></a>
+                <a href="https://www.facebook.com/estiaero/" target="_blank"><i class="fa-brands fa-facebook fa-2xl iconereseaubdp"></i></a>
+                <a href="https://www.linkedin.com/company/estiaero/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl iconereseaubdp"></i></a>
+
+            </div>
+
+            <!-- Retour haut de page -->
+
+            <a class="btnretour" href="#">Retour haut de page</a>
+
+            <p class="messagebdp"> Ce site est la propriété de l'association ESTI'Aéro</p>
+
+        </footer>
+
+    
+    </body>
+
+</html>

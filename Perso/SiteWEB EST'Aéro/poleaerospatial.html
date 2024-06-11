@@ -1,0 +1,337 @@
+<!-- 
+Ce code est consacré à la page index (ou page d'accueil) du site
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="ESTi'Aéro est une association étudiante de l'ESTIA, proposant 
+        des projets et évènements dans le domaine de l'aéronautique, de l'aérospatiale, de l'aéromodélisme et de l'astronomie">
+
+        <meta name="keywords" content="Aéronautique, Avion, ESTIA, ESTI'Aéro, Spatiale, Aéromodélisme, Aérospatiale, Astronomie, BIA">
+
+        <!-- définition du nom de la page -->
+        <title>ESTI'Aéro - Pôle Aérospatial</title>
+        <link rel="shortcut icon" href="images/logo/logoasso.png">
+
+        <!-- lien vers le code css -->
+        <link href="css/sitestyle.css" rel="stylesheet" type="text/css">
+
+        <!-- Lien pour utiliser des iônes FontAwesome-->
+        <script src="https://kit.fontawesome.com/449d8f2d0f.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <!-- implémantation de l'en tête-->
+        <header class="entete"> 
+
+            <div class="logotitreestiaerocontact">
+                <div class="logotitreestiaero">
+                    <a href="index.html"><img src="images/logo/Logo.png" class="logoestiaero" alt="..."></a>
+                    <a href="index.html" class="titreestiaerobis"><p class="titreestiaero">ESTI'Aero</p> </a>
+                </div>
+
+                <div class="contact"> <!-- lien vers les réseaux sociaux ou mail -->
+                    <div class="mail">
+                        
+                        <p class="textcontact"> Contactez-nous !! </p>
+
+                    </div>
+                    
+                    <div class="reseausociaux">
+                        <a href="https://www.instagram.com/esti_aero/" target="_blank"><i class="fa-brands fa-instagram fa-2xl iconereseau"></i></a>
+                        <a href="https://www.facebook.com/estiaero/" target="_blank"><i class="fa-brands fa-facebook fa-2xl iconereseau"></i></a>
+                        <a href="https://www.linkedin.com/company/estiaero/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl iconereseau"></i></a>
+                        <a href="mailto:estiaero@net.estia.fr"><i class="fa-solid fa-envelope fa-2xl iconereseau"></i></a>
+                    </div>
+                    
+                    <div class="adhesion">
+                        <a class="btnadhesion" href="https://www.helloasso.com/associations/esti-aero/adhesions/adhesion-esti-aero-2023-2024?_ga=2.113614471.1292198743.1695228588-252891107.1695228588&_gl=1%2a8wn3qb%2a_ga%2aMjUyODkxMTA3LjE2OTUyMjg1ODg.%2a_ga_TKC826G3G2%2aMTY5NTIyOTk0MS4xLjEuMTY5NTIyOTk2MC41NC4wLjA." target="_blank"> Rejoignez-nous !!</a>
+                    </div>
+
+                    <div class ="locali">
+                        <a href="localisation.html"><i class="fa-solid fa-location-dot fa-xl iconereseau"></i></a>
+                        <a href="localisation.html" class="localitexte">Où nous trouver </a>
+                    </div>
+
+                </div>
+            
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <a class="btnmenu" href="index.html">
+                    <p class="bamenu">Accueil</p>
+                </a>
+                
+
+                <a class="btnmenu" href="historique.html">
+                    <p class="bamenu">Historique</p> 
+                </a>
+
+                <li class="btnmenu">
+                    <a class="bamenu">Pôles &emsp;<i class="fa-solid fa-chevron-down"></i></a> 
+                    <ul class="sousmenupoles">
+                        <a class="sousbtn sousbtnlast" href="poleaeronautique.html">
+                            <p class="bapoles" href="poleaeronautique.html">
+                                <i class="fa-solid fa-plane fa-xl iconenav"></i>
+                                &ensp; Aéronautique
+                            </p>
+                        </a>
+                        <a class="sousbtn sousbtnlast" href="poleaerospatial.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-rocket fa-xl iconenav"></i>
+                                &ensp; Aérospatial
+                            </p>
+                        </a>
+
+                        <a class="sousbtn sousbtnlast" href="poleaeromodelisme.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-tower-broadcast fa-xl iconenav"></i>
+                                &ensp; Aéromodélisme
+                            </p>
+                        </a>
+
+                        <a class="sousbtn sousbtnlast" href="poleastronomie.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-meteor fa-xl iconenav"></i>
+                                &ensp; Astronomie
+                            </p>
+                        </a>
+
+                    </ul>
+                </li>
+
+                <a class="btnmenu" href="partenaires.html">
+                    <p class="bamenu">Partenaires</p> 
+                </a>
+
+                <a class="btnmenu" href="boutique.html">
+                    <p class="bamenu">Boutique</p> 
+                </a>
+
+                <a class="btnmenu" href="simulateur.html">
+                    <p class="bamenu">Simulateur</p> 
+                </a>
+
+            </ul>
+        </nav>
+
+        <!-- Barre de navigation pour téléphone-->   
+        <label id="lab" for="ch">
+            <div class="boutonphone1">
+                <i class="fa-solid fa-bars fa-xl btnmenuphone1"></i>
+            </div>
+        </label>
+        <input type="checkbox" id="ch" />   
+        <nav class="navbarphone">
+
+            <ul class="menuphone">
+                <li class="btnmenup">
+                    <a class="bamenup" href="index.html">Accueil</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="historique.html">Historique</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="#">Pôles</a>
+                </li>
+                
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaeronautique.html">
+                            <i class="fa-solid fa-plane fa-xl iconenav"></i>
+                            &ensp; Aéronautique
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaerospatial.html">
+                            <i class="fa-solid fa-rocket fa-xl iconenav"></i>
+                            &ensp; Aérospatial
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp" >
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaeromodelisme.html">
+                            <i class="fa-solid fa-tower-broadcast fa-xl iconenav"></i>
+                            &ensp; Aéromodélisme
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleastronomie.html">
+                            <i class="fa-solid fa-meteor fa-xl iconenav"></i>
+                            &ensp; Astronomie</a>
+                    </div>
+                </li>
+
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="partenaires.html">Partenaires</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="boutique.html">Boutique</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="simulateur.html">Simulateur</a> 
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <!--Corps de la page-->
+
+        <div class="coprspagespatial">
+
+            <div class="entetepolespatial">
+                <div class="presentationpolespatial">
+                    <img src="images/logo/logo-aerospatial.png" class="logopole" alt="...">
+                    <div class="tpresaerospatial">
+                        <h1 class="titrepolespatial"> Pôle Aérospatial </h1>
+                        <p class="textpresentationpolespatial"> 
+                            Le pôle aérospatial de l'association regroupe différents événements et activités qui permettent
+                            de mieux découvrir et appréhender ce domaine. Nous avons différents projets étudiants en rapport
+                            dont notamment le projet FUSEX et CUBESAT.   
+                        </p>
+                    </div>        
+                </div>
+            </div>
+            
+            <div class="fusex">
+
+                <h1 class="titrefusex">Projet FUSEX</h1>
+
+                <div class="presentationfusex">
+                    <article class="textefusex">
+                        Le projet FUSEX PLUME (Petit Lanceur Universitaire Multi Établissements) est un projet de partenariat 
+                        entre 3 écoles d’ingénieurs (ISAE-ENSMA, ESTIA et ENSAM) planifié sur 4 années universitaires (2020-2024). 
+                        L’objectif est de concevoir, réaliser, lancer et exploiter le vol d’une fusée expérimentale à propulsions 
+                        bi-liquides « verts » stockables. 
+                        <br>
+                        <br>
+                        L’association ESTI’Aéro s’occupe du tronçon supérieur, de l’interface avec le tronçon inférieur d’ISAE-ENSMA 
+                        où se trouvera le moteur bi-liquide, ainsi que de la partie électronique embarquée. Le tronçon supérieur est 
+                        donc un tube de carbone fabriqué par les étudiants chez Composit’Adour, plateforme de fabrication et de recherche 
+                        sur les composites de l’ESTIA. Un espace est aménagé pour permettre le déploiement par ouverture d’une trappe 
+                        du parachute de récupération de la fusée confectionnée par l’ENSAM. La coiffe de la fusée propose un système 
+                        d’intégration des fixations pour les racks supportant l’électronique embarquée. L’équipe d’ESTI’Aéro s’occupe aussi 
+                        de l’intégration d’une caméra extérieure afin de filmer le vol de la fusée. 
+                        <br>
+                        <br>
+                    </article>
+                </div>
+
+                <div class="imagefusex">
+                    <div class="imagefusee">
+                        <img src="images/activite/fusex.jpg" class="imgfusee" alt="...">
+                        <p class="titreimgfusee"> Fusex 2023 avant le lancement</p>
+                    </div>
+                    <div class="imagetravail">
+                        <img src="images/activite/Concepfusex.jpg" class="imgtravail" alt="...">
+                        <p class="titreimgtravail"> Conception des ailerons</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="cubesat">
+
+                <h1 class="titrecubesat">Projet CubeSat</h1>
+
+                <div class="presentationcubesat">
+                    <article class="textecubesat">
+                        Le projet CubeSat, NanoNAASC, vise à promouvoir l’innovation et la performance industrielle dans le domaine 
+                        de l’accès à l’espace, en intégrant ses dimensions économiques, stratégiques et politiques. 
+                        Le lancement aura lieu courant 2025.  
+                        <br>
+                        <br>
+                        Au sein de ce projet, ESTI’Aéro participe à la conception et à la réalisation de la partie « Alimentation en énergie » 
+                        du CubeSat qui comprend la batterie Li-Po, lithium polymère, ainsi que les panneaux solaires et leurs charnières. 
+                        <br>
+                        <br>
+                    </article>
+                </div>
+
+                <div class="imageplaneur">
+                    <img src="images/activite/cubesat.jpg" class="imgplaneur" alt="...">
+                    <p class="titreimgbase"> Projet CubeSat</p>
+                </div>
+
+            </div>
+
+
+            <div class ="naasc">
+                <h1 class="titrenaasc">NAASC</h1>
+
+                <div class="presentationnaasc">
+                    <article class="textenaasc">
+                        Le NAASC, Nouvelle Aquitaine Academic Space Center, en français le Centre spatial universitaire de 
+                        Nouvelle Aquitaine, est une association d’établissements d’enseignement supérieur de la région 
+                        Nouvelle Aquitaine, réunis au sein d’un GIS (groupement d’intérêt scientifique) : le campus Arts et 
+                        Métiers de Bordeaux-Talence, l’école ISAE-ENSMA de Poitiers, Bordeaux INP 
+                        (via son école l’ENSEIRB-MATMECA), l’ESTIA de Bidart ainsi que Sciences Po Bordeaux 
+                        (via sa chaire défense et aérospatial). 
+                        <br>
+                        
+                    </article>
+                    
+                </div>
+                <div class="imagenaasc">
+                    <img src="images/activite/logo_naasc-1.jpg" class="imgnaasc" alt="...">
+                    <p class="titreimgbase"> Logo du NAASC</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- Bas de page-->
+
+        <footer class="basdepage">
+
+            <!-- Adresse -->
+            <div class="textebasdepage">
+                <img src="images/logo/logoasso.png" class="logoestiaerorond" alt="...">
+                <div class="adressesup"><a href="localisation.html" class="adresse"> 92 All. Théodore Monod <br> 64210 Bidart</a></div>
+                <img src="images/logo/estiarond.png" class="logoestiarond" alt="...">
+            </div>
+
+            <div class="mailbasdepage">
+                <a href="mailto:estiaero@net.estia.fr" class="textmailbdp"><i class="fa-solid fa-envelope fa-2xl iconemailbdp"></i>: estiaero@net.estia.fr</a>
+            </div>
+
+            <div class="reseausociauxbasdepage">
+
+                <a href="https://www.instagram.com/esti_aero/" target="_blank"><i class="fa-brands fa-instagram fa-2xl iconereseaubdp"></i></a>
+                <a href="https://www.facebook.com/estiaero/" target="_blank"><i class="fa-brands fa-facebook fa-2xl iconereseaubdp"></i></a>
+                <a href="https://www.linkedin.com/company/estiaero/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl iconereseaubdp"></i></a>
+
+            </div>
+
+            <!-- Retour haut de page -->
+
+            <a class="btnretour" href="#">Retour haut de page</a>
+
+            <p class="messagebdp"> Ce site est la propriété de l'association ESTI'Aéro</p>
+
+        </footer>
+    
+    </body>
+
+</html>

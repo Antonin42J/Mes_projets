@@ -1,0 +1,1783 @@
+/* Fichier pour l'ensemble des style des pages du site internet de ESTI'Aéro 
+*/
+
+/*Implémentation nouvelle police*/
+@font-face{
+    font-family: 'nasa';
+    src : url('../police/nasa.ttf') format('truetype')
+}
+
+/* Partie ORDINATEUR*/
+
+/* commun à toutes les pages*/
+
+    /* Page */
+
+    body{
+        margin:0px;
+        padding: 0px;
+        padding-bottom: 0px;
+        background-color: white;
+    }
+    
+    /* En tête */
+
+
+
+    .logotitreestiaerocontact{
+        padding:20px 10px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+        /*logo + titre*/
+        
+        .logotitreestiaero{
+            padding:10px;
+            display: flex;
+            flex-direction: row;
+            flex-basis: 85%;
+        }
+
+        .logoestiaero{
+            width: 400px;
+            height: 150px;
+        }
+
+        .titreestiaerobis{
+            text-decoration: none;
+        }
+
+        .titreestiaero{
+            font-size: 50px;
+            color: #2a3d55;
+            font-family: 'nasa';
+            margin-left: 20px;
+        }
+
+        /* réseau sociaux/mail*/
+
+        .contact{
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 15%;
+            
+        }
+
+        .reseausociaux{
+            text-align: center;
+            vertical-align: middle;
+            height: 50px;
+        }
+        
+        .mail{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .locali{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .localitexte{
+            margin-left: 5px;
+            font-size: 15px;
+            font-family: cursive;
+            text-decoration: none;
+            color: #2a3d55;
+        }
+
+        .iconereseau{
+            color: #2a3d55;
+        }
+
+        .textcontact{
+            margin-left: 5px;
+            color: #2a3d55;
+            font-family: cursive;
+        }
+
+        .adhesion{
+            text-align: center;
+            background-color: #2a3d55;
+            border-radius: 10px;
+            height: 30px;
+            width: 150px;
+            padding-top: 10px;
+        }
+
+        .btnadhesion{
+            text-decoration: none;
+            color:white;
+            font-family: cursive;
+        }
+
+        /*Navigation*/
+
+        .navbarphone{
+            display: none;
+        }
+
+        #ch,#lab {
+            display: none;
+        }
+
+        .navbar{
+            background-color: transparent;
+            padding-top: 10px;
+            flex-basis: 50%;
+        }
+        
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #2a3d55;
+            border-radius: 0px;
+            margin-bottom: 0px;
+            padding: 0px 40px;
+        }
+        
+        .menu::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .btnmenu{
+            list-style-type:none ;
+            background-color: #2a3d55;
+            padding: 20px;
+            width: 150px;
+            height: 20px;
+            text-align: center;
+            float: left;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .btnmenu:hover{
+            background-color:#404c5b;
+            transition: 0.5s;
+        }
+
+        .bamenu{
+            color: white;
+            margin-top: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+            /*Pôles*/
+
+            .sousmenupoles{
+                display: none;
+            }
+            
+            nav li:hover .sousmenupoles{
+                display: inline-block;
+                position: absolute;
+                top:100%;
+                left:0px;
+                padding: 0px;
+                z-index: 1000;
+            }
+
+            .sousbtn{
+                list-style-type:none ;
+                background-color:white;
+                width: 123%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-decoration: none;
+                
+            }
+
+            .sousbtn:hover{
+                background-color: rgb(190, 190, 190);
+            }
+
+            .bapoles{
+                color: #2a3d55 ;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .iconenav{
+                border-color:#2a3d55;
+            }
+
+    /* Corps */
+
+    .corps{
+        margin-bottom: 10px;
+    }
+
+    .creation{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .textecrea{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /*Bas de page */
+
+    .basdepage{
+        display: flex;
+        flex-direction: column;
+        background-color:#2a3d55;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .textebasdepage{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .logoestiaerorond {
+        width: 250px;
+        height: 250px;
+    }
+
+    .logoestiarond{
+        width: 210px;
+        height: 210px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .adresse{
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 50px;
+        color:white;
+    }
+
+    .adressesup{
+        transform: translateY(50px);
+        padding-top: 25px;
+        text-align: center;
+        height: 50px;
+    }
+
+    .mailbasdepage{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .iconemailbdp{
+        color: white;
+        margin-right: 10px;
+    }
+    
+    .textmailbdp, .iconereseaubdp{
+        color:white;
+    }
+
+    .reseausociauxbasdepage{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .btnretour{
+        color: white;
+        text-align: center;
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .messagebdp{
+        color: white;
+        text-align: center;
+    }
+
+
+/* Pour chaque page */
+
+/*Index*/ 
+
+    /* Titre */ 
+
+    .titre{
+        font-family: 'nasa';
+    }
+
+    /* Corps */
+
+        /* Présentation asso */
+
+        .photopresentationasso{
+            background-color: transparent;
+            background-image: url('../images/photo/nuage.jpg');
+            padding: 80px;
+            height: 300px;
+            background-size:1700px 700px;
+            margin-top: 0px;
+        }
+
+        .presentationasso{
+            display: flex;
+            flex-direction: row ;
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .logoestiaerorondpres{
+            height: 210px;
+            width: 210px;
+        }
+
+        .textpresentation{
+            font-size: 20px;
+            text-align: justify;
+            margin-top: 60px;
+        }
+
+        /* Bouton autre que pôle */
+
+        .btnhistoriqueindex, .btnboutiqueindex, .btnpartenairesindex,.btnsimulateurindex, .btnactualiteindex{
+            text-decoration: none;
+        }
+
+        .texthistoriqueindex, .textehistroriqueindication, .textepartenairesindex, .texteboutiqueindex, .textesimulateurindex, .texteactualiteindex{
+            color: black;
+        }
+
+        .historiqueindex, .partenairesindex, .simulateurindex, .boutiqueindex, .polesindex, .actualiteindex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top:30px;
+            padding: 20px;
+            background-color: transparent;
+        }
+
+        .pbureauindex, .psimulateurindex, .pboutiqueindex, .ppartenairesindex, .pactualiteindex{
+            width: 1000px;
+            height: 350px;
+        }
+
+        .histoindex, .partindex, .boutindex, .simuindex, .textpolesindex{
+            background-color: white;
+            width: 1000px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .titrehistoriqueindex, .titreboutiqueindex, .titresimulateurindex, .titrepartenairesindex, .titreactualiteindex{
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            color: #2a3d55;
+            font-size: 40px;
+        }
+
+        .photobureauindex, .photoboutiqueindex, .photopartenairesindex, .photosimulateurindexs, .photoactualiteindex{
+            height: 350px;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        /* Pôles */
+
+        .ppolesindex{
+            width: 1000px;
+            height: 295px;
+        }
+
+        .photopolesindex {
+            box-shadow: 0px 5px 5px black;
+        }
+        .boutonindexpole{
+            text-decoration: none;
+        }
+
+        .titrepole{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            color: #2a3d55;
+            font-size: 40px;
+        }
+
+        .paeroindex, .pastroindex, .paeromodindex, .pspatialindex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 900px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-size: 900px 274px;
+            padding-top: 117px;
+            padding-bottom: 117px;
+            border-radius: 30px;
+        }
+
+        .textepoleaero, .textepolesastro, .textepolesaeromod, .textepolesspatial {
+            width:300px ;
+            height: 40px;
+            background-color: white;
+            border-radius: 20px;
+            
+        }
+
+        .titrebtnaero, .titrebtnastro, .titrebtnaeromod, .titrebtnspatial{
+            color: #2a3d55;
+            font-size: 35px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .paeroindex{
+            background-image: url(../images/photo/avionusafpetitmodif.jpg);
+        }
+        .pastroindex{
+            background-image: url(../images/photo/espace.jpg);
+        }
+
+        .paeromodindex{
+            background-image: url(../images/photo/dronemodif.jpg);
+        }
+
+        .pspatialindex{
+            background-image: url(../images/photo/satellitemodif.jpg);
+        }
+
+
+/*Actualité*/
+
+.filactu{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 0px;
+    padding-bottom: 40px;
+    
+    margin-top: 40px;
+    width: 700px;
+    margin-bottom: 50px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: solid;
+    border-color: #2a3d55;
+    border-width: 2px;
+    box-shadow: 0px 5px 5px #2a3d55;
+}
+
+.enteteactu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titreactu{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #2a3d55;
+    font-size: 40px;
+    text-align: center;
+}
+
+.descriptionactu{
+    color:black;
+        
+    font-size: 25px;
+}
+
+.fil{
+    margin : 50px 0px ;
+    display: flex;
+    justify-content: center;
+}
+
+.filinsta{
+    width: 600px;
+    padding: 25px;
+    height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+/*Historique*/
+
+    .coprspagehistorique{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bureau{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 0px;
+        
+        margin-top: 40px;
+        width: 1000px;
+        margin-bottom: 50px;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: solid;
+        border-color: gold;
+        border-width: 2px;
+        box-shadow: 0px 5px 5px gold;
+    }
+
+    .bureauactuel{ 
+        background-color: transparent;
+        padding: 20px;
+        width: 800px;
+        
+    }
+
+    .photobureauhistorique{
+        width: 1000px;
+        height: 800px;
+    }
+
+    .bureaunom{
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+        
+    }
+
+    .president, .tresorier, .secretaire, .aspirantg{
+        background-color: transparent;
+        padding-left:40px;
+        justify-content: start;
+
+    }
+
+    .vicepresident, .vicetresorier, .vicesecretaire, .aspirantd {
+        padding-right: 40px;
+        background-color: transparent;
+        justify-content: end;
+    }
+
+    .textevicepre, .textevicetreso, .textevicese, .texteaspid{
+        text-align: end;
+        margin-right: 5px;
+    }
+
+    .textepre, .textetreso, .textese, .texteaspig {
+        margin-left: 5px;
+    }
+
+    .textepre, .textevicepre, .textetreso, .textevicetreso, .textese, .textevicese, .texteaspig , .texteaspid{
+        margin-top: 50px;
+        background-color: transparent;
+        margin-bottom: 50px;
+    }
+
+    .textcolorpre{
+        color: blue;
+    }
+
+    .textcolortre{
+        color: orange;
+    }
+
+    .textcolorse{
+        color: green;
+    }
+
+    .textcoloraspi {
+        color: red;
+    }
+
+    .photoperso{
+        width: 150px;
+        height: 150px; 
+        border-radius: 50%;
+    }
+
+    .btnancienbureau{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: #2a3d55;
+        width: 300px;
+        height: 100px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+
+
+    .histoire{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+
+        margin-bottom: 40px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 700px;
+
+        border-radius: 20px;
+        border : solid;
+        border-color: red;
+        box-shadow: 0px 5px 5px red;
+
+    }
+
+    .hcreation{
+        background-color: transparent;
+    }
+
+    .textehistoire{
+        color:black;
+        margin-left: 20px;
+        font-size: 25px;
+        
+    }
+
+    .photohistoire{
+        width: 300px;
+        height: 200px;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    .listehistoire{
+        list-style-type:square;
+        display: flex;
+        justify-content: start;
+    }
+
+    .titrehistoire{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        color: red;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .titrebureauactuel, .titreaspirantactuel{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        color: gold;
+        font-size: 40px; 
+    }
+
+    .bureauac, .aspirantac{
+        text-align: center;
+    }
+
+    .titreaspirantactuel{
+        font-size: 30px;
+        margin-top: 60px; 
+        margin-bottom: 40px;
+    }
+
+/*Ancien bureau*/
+
+    .coprspageancienbureau{
+        padding-bottom: 30px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnretourhisto{
+        background-color: #2a3d55;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 200px;
+        margin-left: 30px;
+    }
+
+    .bureau2021{
+        margin-top: 50px;
+    }
+
+    .bureau2012, .bureau2013, .bureau2014, .bureau2015, .bureau2016, .bureau2017, .bureau2018, .bureau2019, .bureau2020, .bureau2021 {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+
+        margin-bottom: 40px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 700px;
+
+        border-radius: 20px;
+        border : solid;
+        border-color: #2a3d55;
+        box-shadow: 0px 5px 5px #2a3d55;
+    }
+
+    .abpresident{
+        color: blue;
+    }
+
+    .abtresorier{
+        color: orange;
+    }
+
+    .absecretaire{
+        color: green;
+    }
+
+    .abaspirant {
+        color: red;
+    }
+
+
+
+/*Poles*/
+
+    .poste{
+        border-radius:20px ;
+        border: solid;
+        border-color: #2a3d55;
+        border-width: 1px;
+        box-shadow: 0px 5px 5px #2a3d55;
+
+        margin-right: 150px;
+        margin-left: 150px;
+        padding: 10px;
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   /* Entete Poles*/
+
+    .entetepoleaero, .entetepoleaeromod, .entetepoleastro,.entetepolespatial{
+        padding: 80px;
+        height: 175px;
+        margin-bottom: 20px;
+    }
+
+    .presentationpoleaero, .presentationpoleaeromod, .presentationpoleastro, .presentationpolespatial{
+        display: flex;
+        flex-direction: row ;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .tpresaeromod, .tpresaero, .tpresaerospatial, .tpresastro{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+
+    .logopole{
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+    }
+
+    .textpresentationpoleaero, .textpresentationpoleaeromod, .textpresentationpoleastro,.textpresentationpolespatial{
+        text-align: justify;
+        font-size: 20px;
+    } 
+
+    .entetepoleaero{
+        background-image: url('../images/photo/airbusplane.jpg');
+        background-size: 1700px 696px;
+    }
+    
+    .entetepoleaeromod{
+        background-image: url('../images/photo/dronebis.jpg');
+        background-size: 1550px 350px;
+    }
+    
+    .entetepolespatial{
+        background-image: url('../images/photo/navette.jpg');
+        background-size: 1700px 500px;
+    }
+    .entetepoleastro{
+        background-image: url('../images/photo/luneb.jpg');
+        background-size: 1700px 400px;
+    }
+
+    .titrepoleaero, .titrepoleaeromod, .titrepoleastro, .titrepolespatial{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+
+    .titrepoleaero{
+        color:blue;
+    }
+    .titrepoleaeromod{
+        color:red;
+    }
+    .titrepolespatial{
+        color:rgb(1, 1, 111);
+    }
+    .titrepoleastro{
+        color:blueviolet;
+    }
+    
+    /*presentation pole*/
+
+    .bia, .itxassoutelerad, .aeroturbomeca, .visite{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+
+        border-radius:20px ;
+        border: solid;
+        border-color: #2a3d55;
+        border-width: 1px;
+        box-shadow: 0px 5px 5px #2a3d55;
+
+        margin-right: 150px;
+        margin-left: 150px;
+        padding: 20px 10px;
+
+        margin-bottom: 50px;
+
+    }
+
+    .textebia, .texteitxassoutelera, .texteaeroturbomeca, .textevisite {
+        column-count: 1;
+        column-width: 200px;
+    }
+
+    .photobia{
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin-right: 2px;
+    }
+
+    .btninscriptionbia{
+        align-items: center;
+        margin-top: 20px;
+        color: orange;
+        font-size: 30px;
+        padding: 30px;
+        text-decoration: none;
+        border-radius:20px ;
+        border: solid;
+        border-color: #2a3d55;
+        border-width: 1px;
+        box-shadow: 0px 5px 5px #2a3d55;
+        
+    }
+
+    .logobia{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .titrebia{
+        color: orange;
+        font-size: 35px;
+    }
+
+    .titreitxassoutelerad, .titreaeroturbomeca, .titrevisite{
+        color: rgb(29, 120, 230);
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .imagevisite {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .imagebase, .imagedassault{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageplaneur{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 25px;
+    }
+
+    .imgbase, .imgdassault{
+        width: 425px;
+        height: 250px;
+    }
+
+    .imgplaneur{
+        width: 400px;
+        height : 300px;
+    }
+
+    .titreimgbase, .titreimgdassault {
+        font-size: 15px;
+        color : grey;
+        margin-top: 5px;
+    }
+
+    
+
+    /*Aeromodélisme*/
+
+    .duav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+
+        border-radius:20px ;
+        border: solid;
+        border-color: #2a3d55;
+        border-width: 1px;
+        box-shadow: 0px 5px 5px #2a3d55;
+
+        margin-right: 150px;
+        margin-left: 150px;
+        padding: 20px 10px;
+
+        margin-bottom: 50px;
+
+    }
+
+    .videoaeromod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .imagevideoaeromod{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 25px;
+    }
+
+    .imgvideoaeromod{
+        width: 600px;
+        height : 300px;
+    }
+
+    .imgduav{
+        width: 400px;
+        height : 500px;
+    }
+
+    .titreduav{
+        text-align: center;
+        color: rgb(255, 55, 0);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+
+    .photoduav{
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin-right: 2px;
+        
+    }
+
+    .titrevideoaeromod{
+        text-align: center;
+        color: rgb(255, 55, 0);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+
+    .textevideoaeromod{
+        text-align: justify;
+
+    }
+
+    .imagedroneduav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .imagedrone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Aérospatial*/
+
+    .fusex, .cubesat, .naasc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+
+        border-radius:20px ;
+        border: solid;
+        border-color: #2a3d55;
+        border-width: 1px;
+        box-shadow: 0px 5px 5px #2a3d55;
+
+        margin-right: 150px;
+        margin-left: 150px;
+        padding: 10px;
+
+        margin-bottom: 50px;
+
+    }
+
+    .titrefusex, .titrecubesat, .titrenaasc{
+        text-align: center;
+        color: #2a3d55;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic; 
+    }
+
+    .textefusex, .textecubesat, .textenaasc{
+        column-count: 1;
+        column-width: 200px;
+    }
+
+    .photofusex{
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin-right: 2px;
+    }
+
+    .imagefusex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .imagefusee, .imagetravail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .imgfusee, .imgtravail{
+        width: 425px;
+        height: 250px;
+    }
+
+    .titreimgfusee, .titreimgtravail {
+        font-size: 15px;
+        color : grey;
+        margin-top: 5px;
+    }
+
+    .imagenaasc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 25px;
+    }
+
+    .imgnaasc{
+        width: 400px;
+        height : 400px;
+    }
+
+    /*Astronomie*/
+
+    .astronomie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+
+        border-radius:20px ;
+        border: solid;
+        border-color: #2a3d55;
+        border-width: 1px;
+        box-shadow: 0px 5px 5px #2a3d55;
+
+        margin-right: 150px;
+        margin-left: 150px;
+        padding: 10px;
+
+        margin-bottom: 50px;
+
+    }
+
+    .titreastronomie{
+        text-align: center;
+        color: rgb(211, 1, 253);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic; 
+    }
+
+    .texteastronomie{
+        column-count: 1;
+        column-width: 200px;
+    }
+
+    .photoastronomie{
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin-right: 2px;
+    }
+
+    .titreimgastro{
+        font-size: 15px;
+        color : grey;
+        margin-top: 5px;
+    }
+
+    .imageastronomie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .imageastro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgastro{
+        width: 400px;
+        height : 550px;
+    }
+
+
+/*Partenaires*/ 
+
+    .pagepart{
+        display: flex;
+        flex-direction: column;
+        column-count: 2;
+        align-items: center;
+        margin-top: 40px;
+        background-color: aqua;
+    }
+
+    .btnpartenaires{
+        display: block;
+        background-color: transparent;
+        border-radius: 5px;
+        width: 450px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid;
+        border-width: 1px;
+        border-color:#2a3d55;
+        box-shadow: 0px 3px 3px #2a3d55;
+
+    } 
+
+    .lienestia{
+        background-image: url(../images/partenaires/estia2.png);
+    }
+
+    .lienlcl{
+        background-image: url(../images/partenaires/lcl.png);
+    }
+
+    .liensapcb{
+        background-image: url(../images/partenaires/Sapcb.png);
+    }
+
+    .liennaasc{
+        background-image: url(../images/partenaires/naasc.png);
+    }
+
+    .lienitxassou{
+        background-image: url(../images/partenaires/itxassouplaneur.png);
+    }
+
+    .liencnes{
+        background-image: url(../images/partenaires/cnes.png);
+    }
+
+    .lienarmeeair{
+        background-image: url(../images/partenaires/armeeairpng.png);
+    }
+
+    .lienaeroclub{
+        background-image: url(../images/partenaires/aeroturbomeca.jpg);
+    }
+
+    .lientelerad{
+        background-image: url(../images/partenaires/test.png);
+    }
+
+    .lienestiasystem{
+        background-image: url(../images/partenaires/estiasystem.png)
+
+    }
+
+    .liendassault{
+        background-image: url(../images/partenaires/dassault2.png);
+    }
+
+    .pagepart{
+        background-color: white;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border-color:#2a3d55;
+        box-shadow: 0px 5px 5px #2a3d55;
+        border: solid;
+        border-width: 1px;
+        border-color: #2a3d55;
+        text-align: center;
+
+    }
+
+    .titrepartenaires{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        color: #2a3d55;
+        font-size: 40px;
+    }
+
+/*Boutique*/
+
+    .titrepageboutique{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        color: #2a3d55;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .textepageboutique{
+        text-align: center;
+        font-size: 20px;
+        color: #2a3d55;
+    }
+
+    .imagehelloasso{
+        display: block;
+        margin: 0px auto;
+        height: 200px;
+    }
+
+    .btnboutique{
+        background-color:#2a3d55;
+        display: block;
+        text-align: center;
+        width: 200px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+
+    .pgboutique{
+        margin-top: 40px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border-color:#2a3d55;
+        box-shadow: 0px 5px 5px #2a3d55;
+        padding: 15px;
+        border: solid;
+        border-width: 1px;
+        border-color: #2a3d55;
+    }
+
+/*Simulateur*/
+
+    .pagesimulateur{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pgsimu{
+        margin-top: 40px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border-color:#2a3d55;
+        box-shadow: 0px 5px 5px #2a3d55;
+        border: solid;
+        border-width: 1px;
+        border-color: #2a3d55;
+    }
+
+    .textepagesimu{
+        color: #2a3d55;
+        font-size: 20px;
+    }
+
+    .btnsimu{
+        background-color:#2a3d55;
+        display: block;
+        text-align: center;
+        width: 300px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+
+    .imagesimu{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .titresimu{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        color: #2a3d55;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+/* Localisation */ 
+
+.loca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+    border-radius:20px ;
+    border: solid;
+    border-color: #2a3d55;
+    border-width: 1px;
+    box-shadow: 0px 5px 5px #2a3d55;
+
+    margin-right: 150px;
+    margin-left: 150px;
+    padding: 10px;
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.texteloca{
+    column-count: 1;
+    column-width: 200px;  
+}
+
+.titreloca{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #2a3d55;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Partie Téléphone/Tablette*/
+
+@media screen and (max-width: 1024px){
+
+/* Toute les pages*/
+
+    /* En tête */
+
+    .logotitreestiaerocontact{ 
+        flex-direction: column;
+    }
+
+    .logotitreestiaero{
+        justify-content: center;
+    }
+
+    .adhesion{
+        width: 150px;
+        margin-bottom: 20px;
+        height: 70px;
+        width: 400px;
+    }
+
+    .btnadhesion{
+        font-size: 45px;
+    }
+
+    .localitexte{
+        font-size: 30px;
+    }
+
+    /*Navigation*/
+
+        .navbar{
+            display: none;
+        }
+
+        .navbarphone{
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            justify-content: center;
+            height: 60px;
+            transform: translateX(-5000px);
+            overflow: visible;
+        }
+
+        #ch {
+            display: none;
+        }
+
+        #lab {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #ch:checked+.navbarphone {
+            transform: translateX(0px);
+        }
+
+        .menu{
+            display: none;
+        }
+
+        .menuphone{
+            background-color: white;
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            padding-left:0px;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+
+        .bamenup{
+            color:#2a3d55;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 200px;
+        }
+
+        .bapolesp{
+            color: #2a3d55 ;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btnmenup{
+            list-style-type:none ;
+            background-color: white;
+            font-size: 60px;
+            height: 70px;
+            padding: 30px 0px;
+            padding-left : 75px;
+            margin : 0px 0px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+
+        }
+
+        .sousbtnp{
+            list-style-type:none ;
+            background-color:rgb(190, 190, 190);
+            font-size: 40px;
+
+            padding: 30px 0px;
+            padding-left : 150px; 
+            display: flex;
+            flex-direction: row;
+            justify-content: start;   
+        }
+
+        .boutonphone1{
+            display: flex;
+            text-align: center;
+            color: #2a3d55;
+            font-size: 40px;
+            padding: 10px 0px;
+            margin-top: 0px;
+            cursor: pointer;
+            margin : 20px;
+            
+        }
+
+        .textcontact{
+            font-size: 40px;
+        }
+
+        .iconereseau::before {
+            font-size: 80px;
+            margin: 0px 10px;
+        }
+
+        .reseausociaux{
+            margin : 15px 0px;
+        }
+
+        .locali{
+            height: 80px;
+        }
+
+        .localitexte{
+            margin-bottom: 20px;
+        }
+
+        .hidden-button {
+            visibility: hidden;
+        }
+
+
+    /*Bas de page*/ 
+
+    .textmailbdp, .messagebdp, .btnretour{
+        font-size: 25px;
+    }
+
+    .btnretour{
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .iconemailbdp {
+        font-size: 30px;
+    }
+
+    .iconereseaubdp::before{
+        margin: 15px 10px;
+        font-size: 50px;
+    }
+
+    .mailbasdepage{
+        margin-bottom: 40px;
+    }
+
+    .logoestiarond{
+        margin-top: 40px;
+    }
+
+/*Par page*/
+
+
+/* Index*/
+
+        .histoindex{
+            font-size: 5px;
+        }
+
+        /*Présnetation asso*/
+
+        .textpresentation{
+            margin-top: 20px;
+            font-size: 25px;
+        }
+
+        .logoestiaerorond{
+            margin-top: 20px;
+        }
+
+        .logoestiaerorondpres{
+            margin-top: 30px;
+        }
+
+        .photopresentationasso{
+            padding: 40px;
+            height: 300px;
+            margin-top: 30px;
+        }
+
+        /*Lien vers les autres pages */
+        
+        .pbureauindex,.pbureauindex, .pbureauindex, .ppolesindex{
+            width: 700px;
+            height: 200px;
+        }
+
+        .pbureauindex{
+            height: 250px;
+            width: 700px; 
+        }
+
+        .photobureauindex{
+            height: 250px;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .photopartenairesindex, .photoboutiqueindex, .photosimulateurindex, .photopolesindex{
+            height: 200px;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .histoindex, .partindex, .boutindex, .simuindex, .textpolesindex{
+            width: 700px;
+        }
+
+        .texthistoriqueindex, .textehistroriqueindication, .textepartenairesindex,.texteboutiqueindex, .textesimulateurindex {
+            font-size: 15px;
+        }
+
+        .textepole{
+            font-size: 25px;
+        }
+
+        .photopolesindex{
+            height: 200px;
+        }
+
+        .paeroindex, .pspatialindex, .paeromodindex, .pastroindex{
+            width: 600px;
+            background-size: 600px 183px;
+            padding-top: 71.5px;
+            padding-bottom: 71.5px;
+        }
+
+        .textepoleaero, .textepolesastro, .textepolesaeromod, .textepolesspatial {
+            width:250px ;  
+        }
+
+/*Historique*/
+
+        .bureau{
+            width: 700px;
+        }
+
+        .photobureauhistorique{
+            width: 700px;
+            height: 600px;
+        }
+
+        .bureauactuel{
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .president, .vicepresident, .tresorier, .vicetresorier, .secretaire, .vicesecretaire, .aspirantd, .aspirantg {
+            align-items: center;
+            width: 700px;
+            margin: 0px 10px;
+        }
+
+        .textepre, .textevicepre, .textetreso, .textevicetreso, .textese, .textevicese {
+            font-size: 20px;
+        }
+
+        .coprspageancienbureau{
+            padding-top: 50px;
+        }
+
+/*Poles*/
+
+    .entetepoleaero, .entetepolespatial, .entetepoleastro{
+        margin-top: 30px;
+        height: 300px;
+        padding-top: 100px ;
+    }
+
+    .entetepoleaeromod{
+        margin-top: 30px;
+        height: 220px;
+        padding-top: 50px ;
+    }
+
+    .textpresentationpoleaero, .textpresentationpoleaeromod, .textpresentationpoleastro, .textpresentationpolespatial{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .presentationpoleaero{
+        margin-bottom: 0px;
+    }
+
+    .imagevisite,.imagefusex, .imageastronomie, .imagedroneduav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btninscriptionbia{
+        width: 140px;
+    }
+
+    /*Partenaires*/
+
+    .textepartenaires{
+        font-size: 25px;
+    }
+
+
+    /*Boutique*/
+
+    .textepageboutique, .textepagesimu {
+        font-size: 25px;
+    }
+
+    .btnboutique, .btnsimu{
+        width: 350px;
+        font-size: 25px;
+    }
+}

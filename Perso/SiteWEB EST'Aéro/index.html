@@ -1,0 +1,389 @@
+<!-- 
+Ce code est consacré à la page index (ou page d'accueil) du site
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-422X13YXCE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-422X13YXCE');
+        </script>
+
+        <meta charset="utf-8">
+        
+        <meta name="description" content="ESTi'Aéro est une association étudiante de l'ESTIA, proposant 
+        des projets et des évènements dans le domaine de l'aéronautique, de l'aérospatiale, de l'aéromodélisme et de l'astronomie">
+
+        <meta name="keywords" content="Aéronautique, Avion, ESTIA, ESTI'Aéro, Spatial, Aéromodélisme, Aérospatiale, Astronomie, BIA">
+
+        <!-- définition du nom de la page -->
+        <title>ESTI'Aéro - Accueil</title>
+
+        <link rel="shortcut icon" href="images/logo/logoasso.png">
+
+        <!-- lien vers le code css -->
+        <link href="css/sitestyle.css" rel="stylesheet" type="text/css">
+
+        <!-- Lien pour utiliser des iônes FontAwesome-->
+        <script src="https://kit.fontawesome.com/449d8f2d0f.js" crossorigin="anonymous"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- implémantation de l'en tête-->
+        <header class="entete"> 
+
+            <div class="logotitreestiaerocontact">
+                <div class="logotitreestiaero">
+                    <a href="index.html"><img src="images/logo/Logo.png" class="logoestiaero" alt="..."></a>
+                    <a href="index.html" class="titreestiaerobis"><p class="titreestiaero">ESTI'Aero</p> </a>
+                </div>
+
+                <div class="contact"> <!-- lien vers les réseaux sociaux ou mail -->
+                    <div class="mail">
+                        
+                        <p class="textcontact"> Contactez-nous !! </p>
+
+                    </div>
+                    
+                    <div class="reseausociaux">
+                        <a href="https://www.instagram.com/esti_aero/" target="_blank"><i class="fa-brands fa-instagram fa-2xl iconereseau"></i></a>
+                        <a href="https://www.facebook.com/estiaero/" target="_blank"><i class="fa-brands fa-facebook fa-2xl iconereseau"></i></a>
+                        <a href="https://www.linkedin.com/company/estiaero/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl iconereseau"></i></a>
+                        <a href="mailto:estiaero@net.estia.fr"><i class="fa-solid fa-envelope fa-2xl iconereseau"></i></a>
+                    </div>
+                    
+                    <div class="adhesion">
+                        <a class="btnadhesion" href="https://www.helloasso.com/associations/esti-aero/adhesions/adhesion-esti-aero-2023-2024?_ga=2.113614471.1292198743.1695228588-252891107.1695228588&_gl=1%2a8wn3qb%2a_ga%2aMjUyODkxMTA3LjE2OTUyMjg1ODg.%2a_ga_TKC826G3G2%2aMTY5NTIyOTk0MS4xLjEuMTY5NTIyOTk2MC41NC4wLjA." target="_blank"> Rejoignez-nous !!</a>
+                    </div>
+
+                    <div class ="locali">
+                        <a href="localisation.html"><i class="fa-solid fa-location-dot fa-xl iconereseau"></i></a>
+                        <a href="localisation.html" class="localitexte">Où nous trouver </a>
+                    </div>
+
+                </div>
+            
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <a class="btnmenu" href="index.html">
+                    <p class="bamenu">Accueil</p> 
+                </a>
+
+                <a class="btnmenu" href="historique.html">
+                    <p class="bamenu">Historique</p> 
+                </a>
+
+                <li class="btnmenu">
+                    <a class="bamenu">Pôles &emsp;<i class="fa-solid fa-chevron-down"></i></a> 
+                    <ul class="sousmenupoles">
+                        <a class="sousbtn sousbtnlast" href="poleaeronautique.html">
+                            <p class="bapoles" href="poleaeronautique.html">
+                                <i class="fa-solid fa-plane fa-xl iconenav"></i>
+                                &ensp; Aéronautique
+                            </p>
+                        </a>
+                        <a class="sousbtn sousbtnlast" href="poleaerospatial.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-rocket fa-xl iconenav"></i>
+                                &ensp; Aérospatial
+                            </p>
+                        </a>
+
+                        <a class="sousbtn sousbtnlast" href="poleaeromodelisme.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-tower-broadcast fa-xl iconenav"></i>
+                                &ensp; Aéromodélisme
+                            </p>
+                        </a>
+
+                        <a class="sousbtn sousbtnlast" href="poleastronomie.html">
+                            <p class="bapoles">
+                                <i class="fa-solid fa-meteor fa-xl iconenav"></i>
+                                &ensp; Astronomie
+                            </p>
+                        </a>
+
+                    </ul>
+                </li>
+
+                <a class="btnmenu" href="partenaires.html">
+                    <p class="bamenu">Partenaires</p>
+                </a>
+
+                <a class="btnmenu" href="boutique.html">
+                    <p class="bamenu">Boutique</p> 
+                </a>
+
+                <a class="btnmenu" href="simulateur.html">
+                    <p class="bamenu">Simulateur</p> 
+                </a>
+
+            </ul>
+        </nav>
+
+        <!-- Barre de navigation pour téléphone-->
+        <label id="lab" for="ch">
+            <div class="boutonphone1">
+                <i class="fa-solid fa-bars fa-xl btnmenuphone1"></i>
+            </div>
+        </label> 
+        <input type="checkbox" id="ch" />  
+        <nav class="navbarphone">
+
+            <ul class="menuphone">
+                <li class="btnmenup">
+                    <a class="bamenup" href="index.html">Accueil</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="historique.html">Historique</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="#">Pôles</a> 
+                </li>
+                
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaeronautique.html">
+                            <i class="fa-solid fa-plane fa-xl iconenav"></i>
+                            &ensp; Aéronautique
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaerospatial.html">
+                            <i class="fa-solid fa-rocket fa-xl iconenav"></i>
+                            &ensp; Aérospatial
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp" >
+                    <div class="polep">
+                        <a class="bapolesp" href="poleaeromodelisme.html">
+                            <i class="fa-solid fa-tower-broadcast fa-xl iconenav"></i>
+                            &ensp; Aéromodélisme
+                        </a>
+                    </div>
+                </li>
+                <li class="sousbtnp">
+                    <div class="polep">
+                        <a class="bapolesp" href="poleastronomie.html">
+                            <i class="fa-solid fa-meteor fa-xl iconenav"></i>
+                            &ensp; Astronomie</a>
+                    </div>
+                </li>
+
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="partenaires.html">Partenaires</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="boutique.html">Boutique</a> 
+                </li>
+
+                <li class="btnmenup">
+                    <a class="bamenup" href="simulateur.html">Simulateur</a> 
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Corps de la page -->
+
+        <div class="corps">
+
+            <div class="photopresentationasso">
+                <div class="presentationasso">
+                    <img src="images/logo/logoasso.png" class="logoestiaerorondpres" alt="...">
+                    <p class="textpresentation"> 
+                        L'association ESTI'Aéro est une association étudiante de l'Ecole Supérieure des Technologies Industrielles 
+                        Avancées (ESTIA) située à Bidart dans le Pays-Basque. Cette association à but non lucratif participe à la mise 
+                        en valeur du monde de l'aéronautique et de ces domaines associés comme le spatial, l'aéromodélisme ou encore 
+                        l'astronomie auprès des élèves et du personnel de l'ESTIA. Pour ce faire, l'association organise différents 
+                        évènements et activités.  
+                    </p>        
+                </div>
+            </div>
+
+            <!-- <a class="btnactualiteindex" href="actualite.html">  
+                <div class="actualiteindex">
+                    <div class="photoactualiteindex">
+                        <img src="images/photo/actualite.jpg" class="pactualiteindex" alt="...">
+                    </div>
+
+                    <div class="partindex">
+                        <h1 class="titreactualiteindex"> Actualités </h1>
+                        <p class="texteactualiteindex"> Venez suivre nos dernières actualités </p>
+                    </div>
+                </div>
+            </a>  -->
+
+            <a href="historique.html" class="btnhistoriqueindex">
+                <div class="historiqueindex">
+                    <div class="photobureauindex">
+                        <img src="images/bureau/bureau2023modif.jpg" class="pbureauindex" alt="...">
+                    </div>
+                    <div class="histoindex">
+                        <h1 class="titrehistoriqueindex">Historique</h1>
+                        <p class="texthistoriqueindex">
+                            <u>Bureau 2024-2025:</u> <br>
+                            - Jordan PERROT (Président) <br>
+                            - Flavien SERRET (Vice-Président) <br>
+                            - Laura FOREST (Trésorière) <br>
+                            - Manon BÉGUÉ (Vice-Trésorière) <br>
+                            - Nathan DELABARRE (Secrétaire) <br>
+                            - Mathias PHILIPPONNEAU (Vice-Secrétaire) <br>
+                        </p>
+
+                        <p class="textehistroriqueindication">
+                            Venez découvrir les anciens bureaux et les moments forts de l'association dans l'onglet historique
+                        </p>
+
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="polesindex">
+                <div class="photopolesindex">
+                    <img src="images/photo/rafale.jpg" class="ppolesindex" alt="...">
+                </div>
+
+                <div class="textpolesindex">
+                    <div class="pindex">
+                        <div class="textepoles">
+                            <h1 class="titrepole">Pôles</h1>
+                            <p class="textepole">Dans cette partie, vous pourrez découvrir les différents domaines d'activités de l'association</p>
+                        </div>
+                    </div>
+
+                    <a href="poleaeronautique.html" class="boutonindexpole">
+                        <div class="paeroindex boutonlientelephone">
+                            <div class="textepoleaero textepoletelephone">
+                                <p class="titrebtnaero">Aéronautique</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="poleaerospatial.html" class="boutonindexpole">
+                        <div class="pspatialindex boutonlientelephone">
+                            <div class="textepolesspatial textepoletelephone">
+                                <p class="titrebtnspatial">Aérospatial</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="poleaeromodelisme.html" class="boutonindexpole">
+                        <div class="paeromodindex boutonlientelephone">
+                            <div class="textepolesaeromod textepoletelephone">
+                                <p class="titrebtnaeromod">Aéromodélisme</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="poleastronomie.html" class="boutonindexpole">
+                        <div class="pastroindex boutonlientelephone">
+                            <div class="textepolesastro textepoletelephone">
+                                <p class="titrebtnastro">Astronomie</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a class="btnpartenairesindex" href="partenaires.html">  
+                <div class="partenairesindex">
+                    <div class="photopartenairesindex">
+                        <img src="images/photo/partenariat.webp" class="pbureauindex" alt="...">
+                    </div>
+
+                    <div class="partindex">
+                        <h1 class="titrepartenairesindex"> Partenaires </h1>
+                        <p class="textepartenairesindex"> Venez découvrir nos différents partenaires grâce à qui nous pouvons proposer les différentes activités </p>
+                    </div>
+                </div>
+            </a> 
+
+            <a class="btnboutiqueindex" href="boutique.html">
+                <div class="boutiqueindex">
+                    <div class="photoboutiqueindex">
+                        <img src="images/bureau/photopull.png" class="pbureauindex" alt="..."> 
+                    </div>
+
+                    <div class="boutindex">
+                        <h1 class="titreboutiqueindex"> Boutique </h1>
+                        <p class="texteboutiqueindex"> Venez profiter des goodies à l'image de l'association </p>
+                    </div>
+
+                </div>
+            </a>
+            
+            <a class="btnsimulateurindex" href="simulateur.html">
+                <div class="simulateurindex">
+                    <div class="photosimulateurindex">
+                        <img src="images/activite/simu2.png" class="pbureauindex" alt="..."> 
+                    </div>
+
+                    <div class="simuindex">
+                        <h1 class="titresimulateurindex"> Simulateur </h1>
+                        <p class="textesimulateurindex"> Venez tester vos qualités de pilote sur notre simulateur </p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Bas de page-->
+
+        <footer class="basdepage">
+
+            <!-- Adresse -->
+            <div class="textebasdepage">
+                <img src="images/logo/logoasso.png" class="logoestiaerorond" alt="...">
+                <div class="adressesup"><a href="localisation.html" class="adresse"> 92 All. Théodore Monod <br> 64210 Bidart</a></div>
+                <img src="images/logo/estiarond.png" class="logoestiarond" alt="...">
+            </div>
+
+            <div class="mailbasdepage">
+                <a href="mailto:estiaero@net.estia.fr" class="textmailbdp"><i class="fa-solid fa-envelope fa-2xl iconemailbdp"></i>: estiaero@net.estia.fr</a>
+            </div>
+
+            <div class="reseausociauxbasdepage">
+
+                <a href="https://www.instagram.com/esti_aero/" target="_blank"><i class="fa-brands fa-instagram fa-2xl iconereseaubdp"></i></a>
+                <a href="https://www.facebook.com/estiaero/" target="_blank"><i class="fa-brands fa-facebook fa-2xl iconereseaubdp"></i></a>
+                <a href="https://www.linkedin.com/company/estiaero/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl iconereseaubdp"></i></a>
+
+            </div>
+
+            <!-- Retour haut de page -->
+
+            <a class="btnretour" href="#">Retour haut de page</a>
+
+            <p class="messagebdp"> Ce site est la propriété de l'association ESTI'Aéro</p>
+
+        </footer>
+
+    </body>
+
+
+</html>
