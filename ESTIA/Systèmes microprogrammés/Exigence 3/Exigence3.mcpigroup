@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\..\..\Exigence1timer.mcppi
+Project1=Exigence3.mcppi
+[ActiveProject]
+Index=1

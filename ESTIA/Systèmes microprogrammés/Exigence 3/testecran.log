@@ -1,0 +1,11 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F887 -DL -O11111114 -fo8 -N"C:\Users\antonin.jonot\OneDrive - ESTIA\Bureau\ESTIA\2A-Semestre3\Système microprogrammé\Projet\Projet ROBESTIA\Codes\Exigence 3\testecran.mcppi" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\antonin.jonot\OneDrive - ESTIA\Bureau\ESTIA\2A-Semestre3\Système microprogrammé\Projet\Projet ROBESTIA\Codes\Exigence 3\" -IP"C:\Program Files\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "testecran.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	testecran.c
+diagnostics: 77	123	Compiled Successfully	testecran.c
+diagnostics: 0	127	All files Compiled in 78 ms	 
+hint: 0	1144	Used RAM (bytes): 51 (14%)  Free RAM (bytes): 301 (86%)	Used RAM (bytes): 51 (14%)  Free RAM (bytes): 301 (86%)
+hint: 0	1144	Used ROM (program words): 435 (5%)  Free ROM (program words): 7757 (95%)	Used ROM (program words): 435 (5%)  Free ROM (program words): 7757 (95%)
+diagnostics: 0	125	Project Linked Successfully	testecran.mcppi
+diagnostics: 0	128	Linked in 16 ms	 
+diagnostics: 0	129	Project 'testecran.mcppi' completed: 250 ms	 
+diagnostics: 0	103	Finished successfully: 20 nov. 2022, 11:24:04	testecran.mcppi
