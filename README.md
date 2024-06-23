@@ -5,4 +5,6 @@ Il n'y a pas de démarche CI/CD avec notamment des procédures de test effectué
 
 Bonne découverte.  
 
+Vous pouvez consulter mon profil sur TryHackMe, pour me suivre dans ma découverte du milieu Cyber : https://tryhackme.com/p/Antonin42J
+
 Pour toutes questions, veuillez me contacter par e-mail : antonin.jonot@outlook.fr
